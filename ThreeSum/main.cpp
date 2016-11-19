@@ -46,7 +46,7 @@ class Solution
 		if(vArray.size() < 3)
 			return vResult;
 		
-		sort(vArray,begin(),vArray.end());
+		sort(vArray.begin(),vArray.end());
 		
 		auto last = vArray.end();
 		
@@ -79,7 +79,7 @@ class Solution
 					tmp.push_back(*i);
 					tmp.push_back(*j);
 					tmp.push_back(*k);
-					vResult.push_back()tmp;
+					vResult.push_back(tmp);
 					j++;
 					k--;
 					while((*j == *(j-1))&&(*k == *(k+1)) && j < k)
