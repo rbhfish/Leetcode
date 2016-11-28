@@ -10,7 +10,7 @@ struct ListNode
 	ListNode* next;
 	ListNode(int x):nValue(x),next(NULL){ };
 };
-
+//might use stack
 class Solution
 {
 	public:
